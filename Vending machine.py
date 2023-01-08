@@ -28,15 +28,19 @@ def vending_machine():
         insert=float(input("PLEASE ENTER CASH:"))
         if insert>Sum:
             print('HERE IS YOUR CHANGE',insert-Sum)
+            print("HERE! PLEASE COLLECT YOUR ITEMS")
             print("THANK YOU FOR PURCHASING WITH US")
         if insert<Sum:
             balance=float(input('INSUFFICIENT AMOUNT,PLEASE ENTER AED '+str(Sum-insert)))
             if balance>Sum-insert:
                 print("Here is your balance,",balance-(Sum-insert))
+                print('HERE!PLEASE COLLECT YOUR ITEMS')
                 print('THANK YOU FOR PURCHASING WITH US.')
             if balance==Sum-insert:
+                print('HERE! PLEASE COLLECT YOUR ITEMS')
                 print("THANK YOU FOR PURCHASING WITH US!!")
         if insert==Sum:
+            print('HERE!PLEASE COLLECT YOUR ITEMS')
             print("THANK YOU FOR PURCHASING WITH US")
         for i in selected:
             selected.remove(i)
