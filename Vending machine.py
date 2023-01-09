@@ -178,7 +178,7 @@ def vending_machine():
                     elif qn1==entire[2][0][2]:
                         qn12=input("WOULD YOU ALSO LIKE TO GET AN "+entire[3][0][0]+' ALONG WITH YOUR CHOCOLATE? Y/N')
                         if qn12=='Y':
-                            selected.append(entire[3][0][2])
+                            selected.append(entire[3][0][1])
                             print('AN '+entire[3][0][0]+' WILL BE ADDED TO YOUR PURCHASE')
                             total()
                             for i in selected:
